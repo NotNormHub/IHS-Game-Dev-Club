@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn0dpqfxcc4s1"]
+
+[ext_resource type="PackedScene" uid="uid://qgkdur06k7x0" path="res://Scenes/Player.tscn" id="1_xgjjc"]
+[ext_resource type="PackedScene" uid="uid://dhapbteuu68ns" path="res://Scenes/Grass.tscn" id="2_thplq"]
+[ext_resource type="Texture2D" uid="uid://lr31rey0t7hp" path="res://Assets/Space.jpg" id="3_u2j6u"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_xgjjc")]
+z_index = 1
+position = Vector2(1287, 425)
+
+[node name="Grass" parent="." instance=ExtResource("2_thplq")]
+position = Vector2(1271, 390)
+scale = Vector2(1.276, 2)
+
+[node name="Space" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(1296, -192)
+texture = ExtResource("3_u2j6u")
+region_enabled = true
+region_rect = Rect2(2, 0.5, 2600, 381)

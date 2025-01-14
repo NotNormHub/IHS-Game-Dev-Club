@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2476nnu1faw7"]
+
+[ext_resource type="Texture2D" uid="uid://bl60tmwycqpv3" path="res://Assets/Grass.jpg" id="1_7evl2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjy4b"]
+size = Vector2(1147.5, 279.5)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Grass" type="Sprite2D" parent="."]
+position = Vector2(572, 369)
+scale = Vector2(2.21899, 1.88817)
+texture = ExtResource("1_7evl2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(572.25, 599.75)
+shape = SubResource("RectangleShape2D_wjy4b")

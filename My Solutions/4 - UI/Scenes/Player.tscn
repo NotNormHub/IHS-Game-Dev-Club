@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr8an8ey500v0"]
+
+[ext_resource type="Texture2D" uid="uid://dyws6yu3dfpii" path="res://Assets/Boat.png" id="1_f15yo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8op3s"]
+radius = 103.817
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Boat" type="Sprite2D" parent="."]
+position = Vector2(2, 1)
+scale = Vector2(0.0625, 0.0614258)
+texture = ExtResource("1_f15yo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-14, -15)
+shape = SubResource("CircleShape2D_8op3s")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, -200)
+limit_left = 0
+limit_right = 2000

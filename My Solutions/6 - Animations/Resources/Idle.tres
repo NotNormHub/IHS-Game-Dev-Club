@@ -1,0 +1,49 @@
+[gd_resource type="AnimatedTexture" load_steps=16 format=3 uid="uid://crk81t5gk1e5j"]
+
+[ext_resource type="Texture2D" uid="uid://ivjafp46yi0" path="res://Assets/Mage/mage.png" id="1_tawkx"]
+[ext_resource type="Texture2D" uid="uid://d2sjehvk8kjnj" path="res://Assets/Mage/Idle/idle1.png" id="2_w2xah"]
+[ext_resource type="Texture2D" uid="uid://cjys8at8877u3" path="res://Assets/Mage/Idle/idle10.png" id="3_xj0y7"]
+[ext_resource type="Texture2D" uid="uid://wd4ry2rfern8" path="res://Assets/Mage/Idle/idle11.png" id="4_7wnls"]
+[ext_resource type="Texture2D" uid="uid://dr4t48362o7fc" path="res://Assets/Mage/Idle/idle12.png" id="5_ik2sm"]
+[ext_resource type="Texture2D" uid="uid://bvwbtk36tclk7" path="res://Assets/Mage/Idle/idle13.png" id="6_7d1md"]
+[ext_resource type="Texture2D" uid="uid://cmjmjw4w865mi" path="res://Assets/Mage/Idle/idle14.png" id="7_qt2cs"]
+[ext_resource type="Texture2D" uid="uid://51yjja8crsf8" path="res://Assets/Mage/Idle/idle2.png" id="8_t38dn"]
+[ext_resource type="Texture2D" uid="uid://cu2dtl0livmog" path="res://Assets/Mage/Idle/idle3.png" id="9_d0pdk"]
+[ext_resource type="Texture2D" uid="uid://3gu8u1ojq25e" path="res://Assets/Mage/Idle/idle4.png" id="10_kl0jc"]
+[ext_resource type="Texture2D" uid="uid://l1m180twaykf" path="res://Assets/Mage/Idle/idle5.png" id="11_gquy0"]
+[ext_resource type="Texture2D" uid="uid://ct6qctvmvkait" path="res://Assets/Mage/Idle/idle6.png" id="12_l00fu"]
+[ext_resource type="Texture2D" uid="uid://dvqpt17g4vueg" path="res://Assets/Mage/Idle/idle7.png" id="13_1cht0"]
+[ext_resource type="Texture2D" uid="uid://bnkigx0pvcyqe" path="res://Assets/Mage/Idle/idle8.png" id="14_kkdm2"]
+[ext_resource type="Texture2D" uid="uid://dy3pwn0pq3amb" path="res://Assets/Mage/Idle/idle9.png" id="15_n8mve"]
+
+[resource]
+frames = 15
+frame_0/texture = ExtResource("1_tawkx")
+frame_1/texture = ExtResource("2_w2xah")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("8_t38dn")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("9_d0pdk")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("10_kl0jc")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("11_gquy0")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("12_l00fu")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("13_1cht0")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("14_kkdm2")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("15_n8mve")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("3_xj0y7")
+frame_10/duration = 1.0
+frame_11/texture = ExtResource("4_7wnls")
+frame_11/duration = 1.0
+frame_12/texture = ExtResource("5_ik2sm")
+frame_12/duration = 1.0
+frame_13/texture = ExtResource("6_7d1md")
+frame_13/duration = 1.0
+frame_14/texture = ExtResource("7_qt2cs")
+frame_14/duration = 1.0

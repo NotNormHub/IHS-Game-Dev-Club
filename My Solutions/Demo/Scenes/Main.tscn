@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcq3at5wnbvy0"]
+
+[ext_resource type="PackedScene" uid="uid://dq015tn8lidss" path="res://Scenes/Player.tscn" id="1_dema4"]
+[ext_resource type="PackedScene" uid="uid://b1milu5cmelv7" path="res://Scenes/Floor.tscn" id="2_up8re"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-3, 2)
+scale = Vector2(0.984199, 0.99685)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_dema4")]
+position = Vector2(298, 131)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_up8re")]
+position = Vector2(-86, 489)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_up8re")]
+position = Vector2(1324.94, 484.526)

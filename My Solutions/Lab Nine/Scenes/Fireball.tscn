@@ -1,0 +1,62 @@
+[gd_scene load_steps=11 format=3 uid="uid://cgi1sd3dx6xry"]
+
+[ext_resource type="Shader" path="res://Resources/Red.gdshader" id="1_53aq7"]
+[ext_resource type="Script" path="res://Scripts/Fireball.cs" id="1_s6s3y"]
+[ext_resource type="Texture2D" uid="uid://shn2i12uom3p" path="res://Assets/Magic/scorch_01.png" id="2_ni0a0"]
+[ext_resource type="Texture2D" uid="uid://dxuf2pjo2e6vk" path="res://Assets/Magic/scorch_02.png" id="3_lln8x"]
+[ext_resource type="Texture2D" uid="uid://dsumjj2upy778" path="res://Assets/Magic/scorch_03.png" id="4_y3bs1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i12oy"]
+shader = ExtResource("1_53aq7")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0ugf5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ni0a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lln8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y3bs1")
+}],
+"loop": true,
+"name": &"Fireball",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_84phv"]
+radius = 100.0
+
+[sub_resource type="Gradient" id="Gradient_jmgfk"]
+offsets = PackedFloat32Array(0, 0.996914, 1)
+colors = PackedColorArray(0.933333, 0, 0.0352941, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_r77au"]
+gradient = SubResource("Gradient_jmgfk")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.884615, 0.0769231)
+
+[node name="Fireball" type="Area2D"]
+script = ExtResource("1_s6s3y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_i12oy")
+position = Vector2(1, -3)
+sprite_frames = SubResource("SpriteFrames_0ugf5")
+animation = &"Fireball"
+autoplay = "Fireball"
+frame_progress = 0.217544
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_84phv")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+scale = Vector2(20, 20)
+texture = SubResource("GradientTexture2D_r77au")
+
+[connection signal="body_entered" from="." to="." method="BodyEntered"]
